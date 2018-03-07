@@ -1,0 +1,419 @@
+{
+  "error": {
+    "general": [
+      "Sorry, something went wrong.",
+      "Uh oh. I’m having trouble with that."
+    ],
+    "fatal": [
+      "Oops, something went wrong. Sorry. Please try again a little later."
+    ]
+  },
+  "general": {
+    "exit": ["See you later.", "I hope you’ll be back soon."],
+    "fallback": [
+      "Hm. I don’t understand. I said...",
+      "Sorry, I’m not sure what you’re asking. I said... ",
+      "That’s not something I can help with. I said..."
+    ],
+    "your_card": "Your card",
+    "you_wrote": "You wrote:",
+    "heres_your_card": "Here's your card.",
+    "share_your_card": "Share your card"
+  },
+  "fallbacks": {
+    "default_fallback": [
+      "Sorry I’m not sure what you’re asking",
+      "Hmmm. I don’t understand",
+      "That’s not something I can do"
+    ],
+    "": ""
+  },
+  "welcome": {
+    "onboarding": [
+      "Create a card for those you hold dear. Whatever your style, it’s all right here! Choose fun, choose sweet, or a little of both, but if neither will do then make your own!"
+    ],
+    "welcome": ["Hi! I’m so happy you’re here. Let’s create a card together. "],
+    "suggestions": ["Start a card"]
+  },
+  "help": {
+    "intro":
+      "Whether it’s a card for family, a friend or your love, I can help. Choose from all kinds of options or simply make your own.",
+    "suggestions": ["Start card", "Show 10 latest cards", "Help"]
+  },
+  "card": {
+    "start": {
+      "intro": [
+        "<speak>Let’s get your first card started.<break strength=\"strong\" /></speak>",
+        "<speak>Welcome back! Let’s create a new card.<break strength=\"strong\" /></speak>",
+        "<speak>Another card already? Wow. Okay, let’s get it going.<break strength=\"strong\" /></speak>",
+        "<speak>You’re a card making machine! Let’s do this.<break strength=\"strong\" /></speak>"
+      ],
+      "prompt": "What type of card do you want to make?",
+      "suggestions": ["Friendly", "Romantic", "Choose the Occasion"],
+      "fallback": "It's easy! Simply choose the type of card you want . ",
+      "error": {
+        "context": "Sorry I didn't get that."
+      }
+    },
+    "changeSurface": {
+      "message": "May I send notifications and other items to your device?",
+      "notification": "Continue your card creation!",
+      "noScreens": "No available screens."
+    },
+    "design": {
+      "select": "Now pick one of the four options below.",
+      "success":
+        "Here’s your card! Say ‘switch it up’ to make changes or 'next' to continue.",
+      "suggestions": [],
+      "fallback": "Go ahead and pick a card you like."
+    },
+    "switched": {
+      "success":
+        "Say ‘Switch it up’ and I’ll change the line, or 'next' to confirm.",
+      "suggestions": [],
+      "fallback": "Should I continue anyway?",
+      "failure": [
+        "Woah, slow down. I can only make so many changes to your card.",
+        "Still not what you want? Try another card.",
+        "Looks like you’re back where you started. Try a different card."
+      ]
+    },
+    "messagePrompt": {
+      "intro": "Do you want to add a personal message? Say 'yes' or 'no':"
+    },
+    "message": {
+      "intro":
+        "<speak>Add your message now. <break strength=\"strong\" /> (Hint: <break strength=\"medium\" />keep it short)</speak>"
+    },
+    "messageError": {
+      "length":
+        "Ooops you’ve reached the character limit. Add a shorter message now:",
+      "content": "Sorry, you can't say that. Add a different message now:"
+    },
+    "addedMessage": {
+      "intro": [
+        "Here you go! Are you ready to share your card?",
+        "I hope you like your card as much as I do? Should we share it?",
+        "Nice! So, is this card ready to share or what?"
+      ],
+      "suggestions": ["Yes", "No"],
+      "fallback": "Continue anyway?"
+    },
+    "share": {
+      "intro": [
+        "Here you go! Click on 'share your card' to send it.",
+        "Nice! Click on 'share your card' to send it."
+      ],
+      "share_link": "Share your card",
+      "suggestions": ["Start a New Card", "Help"],
+      "heres_your_card": "Here's your card:"
+    },
+    "completion": {
+      "intro": "Here's your card:",
+      "suggestions": ["Share my card", "Start a New Card"]
+    },
+    "skipShare": {
+      "intro": "Here's your card. Say 'share my card' to share it.",
+      "suggestions": ["Share my card", "Start a new card", "Menu"]
+    }
+  },
+  "signature": {
+    "prompt": {
+      "intro": "Enter your greeting card signature now:"
+    },
+    "error": {
+      "length":
+        "Ooops you’ve reached the character limit. Add a shorter message now:",
+      "content": "Sorry, you can't say that. Add a different message now:"
+    },
+    "success": {
+      "intro":
+        "Your cards will now be signed with \"%sig\". Say \"Change my signature\" to change it."
+    }
+  },
+  "share": {
+    "card": {
+      "intro": "Here's your card:",
+      "share_link": "Share your card",
+      "suggestions": ["Start a New Card", "Help"]
+    },
+    "nocard": {
+      "intro": "You don't have a card to share. Start a new card?",
+      "suggestions": ["Start a new card", "Show my cards"]
+    }
+  },
+  "latest": {
+    "intro": "Check out and share your cards!"
+  },
+  "templates": {
+    "mapping": {
+      "romantic": 0,
+      "friendly": 5,
+      "custom": 10
+    },
+    "previews": {
+      "url":
+        "https://storage.googleapis.com/prj-greeting-cards-prod.appspot.com/previews/",
+      "ext": ".jpg"
+    },
+    "input": {
+      "ext": ".png"
+    },
+    "output": {
+      "ext": ".jpg",
+      "format": "jpg"
+    },
+    "options": {
+      "friendly": [
+        "playful-board",
+        "playful-unicorn",
+        "playful-cat",
+        "playful-buds"
+      ],
+      "romantic": [
+        "romantic-board",
+        "romantic-unicorn",
+        "romantic-cat",
+        "romantic-buds"
+      ],
+      "custom": [
+        "custom-birthday",
+        "custom-getwell",
+        "custom-anniversary",
+        "custom-congrats"
+      ]
+    },
+    "suggestions": {
+      "friendly": ["Cheesier", "Cooler", "Chill"],
+      "romantic": ["Young love", "True love", "Crazy love"],
+      "custom": []
+    },
+    "images": {
+      "romantic-board": {
+        "title": "Keyboard",
+        "alt": "Keyboard Card",
+        "labels": ["%i", "design %i", "keyboard", "board", "keys"],
+        "texts": {
+          "sxsw": "SXSW copy",
+          "young": "Young love copy",
+          "true": "True love copy",
+          "crazy": "Crazy love copy",
+          "blank": "blank card"
+        },
+        "preview": "romantic-keyboard-blank",
+        "names": [
+          "romantic-keyboard-sxsw",
+          "romantic-keyboard-young",
+          "romantic-keyboard-true",
+          "romantic-keyboard-crazy",
+          "romantic-keyboard-blank"
+        ],
+        "font": "JustMeAgainDownHere.ttf",
+        "color": "#000000",
+        "template": "basic"
+      },
+      "romantic-unicorn": {
+        "title": "Unicorn",
+        "alt": "Unicorn Card",
+        "labels": ["%i", "design %i", "unicor", "unicorns"],
+        "texts": {
+          "sxsw": "SXSW copy",
+          "young": "Young love copy",
+          "true": "True love copy",
+          "crazy": "Crazy love copy",
+          "blank": "blank card"
+        },
+        "preview": "romantic-unicorn-blank",
+        "names": [
+          "romantic-unicorn-sxsw",
+          "romantic-unicorn-young",
+          "romantic-unicorn-true",
+          "romantic-unicorn-crazy",
+          "romantic-unicorn-blank"
+        ],
+        "font": "JustMeAgainDownHere.ttf",
+        "color": "#000000",
+        "template": "basic"
+      },
+      "romantic-cat": {
+        "title": "Cat",
+        "alt": "Cat Card",
+        "labels": ["%i", "design %i", "cat", "cats"],
+        "texts": {
+          "sxsw": "SXSW copy",
+          "young": "Young love copy",
+          "true": "True love copy",
+          "crazy": "Crazy love copy",
+          "blank": "blank card"
+        },
+        "preview": "romantic-cat-blank",
+        "names": [
+          "romantic-cat-sxsw",
+          "romantic-cat-young",
+          "romantic-cat-true",
+          "romantic-cat-crazy",
+          "romantic-cat-blank"
+        ],
+        "font": "JustMeAgainDownHere.ttf",
+        "color": "#000000",
+        "template": "basic"
+      },
+      "romantic-buds": {
+        "title": "Buds",
+        "alt": "Earbuds design",
+        "labels": ["%i", "design %i", "buds", "earbuds"],
+        "texts": {
+          "sxsw": "SXSW copy",
+          "young": "Young love copy",
+          "true": "True love copy",
+          "crazy": "Crazy love copy",
+          "blank": "blank card"
+        },
+        "preview": "romantic-buds-blank",
+        "names": [
+          "romantic-buds-sxsw",
+          "romantic-buds-young",
+          "romantic-buds-true",
+          "romantic-buds-crazy",
+          "romantic-buds-blank"
+        ],
+        "font": "JustMeAgainDownHere.ttf",
+        "color": "#000000",
+        "template": "basic"
+      },
+
+      "playful-board": {
+        "title": "Keyboard",
+        "alt": "Keyboard",
+        "labels": ["%i", "design %i", "Keyboard", "Keys"],
+        "texts": {
+          "sxsw": "SXSW copy",
+          "cheesy": "Cheesy copy",
+          "chill": "Chill copy",
+          "cool": "Cool copy",
+          "blank": "Blank card"
+        },
+        "preview": "playful-keyboard-blank",
+        "names": [
+          "playful-keyboard-sxsw",
+          "playful-keyboard-cheesy",
+          "playful-keyboard-chill",
+          "playful-keyboard-cool",
+          "playful-keyboard-blank"
+        ],
+        "font": "JustMeAgainDownHere.ttf",
+        "color": "#000000",
+        "template": "basic"
+      },
+      "playful-unicorn": {
+        "title": "Unicorn",
+        "alt": "Unicorn design",
+        "labels": ["%i", "design %i", "unicorn", "unicorns"],
+        "texts": {
+          "sxsw": "SXSW copy",
+          "cheesy": "Cheesy copy",
+          "chill": "Chill copy",
+          "cool": "Cool copy",
+          "blank": "Blank card"
+        },
+        "preview": "playful-unicorn-blank",
+        "names": [
+          "playful-unicorn-sxsw",
+          "playful-unicorn-cheesy",
+          "playful-unicorn-chill",
+          "playful-unicorn-cool",
+          "playful-unicorn-blank"
+        ],
+        "font": "JustMeAgainDownHere.ttf",
+        "color": "#000000",
+        "template": "basic"
+      },
+      "playful-cat": {
+        "title": "Cat",
+        "alt": "Cat design",
+        "labels": ["%i", "design %i", "cat", "cats"],
+        "texts": {
+          "sxsw": "SXSW copy",
+          "cheesy": "Cheesy copy",
+          "chill": "Chill copy",
+          "cool": "Cool copy",
+          "blank": "Blank card"
+        },
+        "preview": "playful-cat-blank",
+        "names": [
+          "playful-cat-sxsw",
+          "playful-cat-cheesy",
+          "playful-cat-chill",
+          "playful-cat-cool",
+          "playful-cat-blank"
+        ],
+        "font": "JustMeAgainDownHere.ttf",
+        "color": "#000000",
+        "template": "basic"
+      },
+      "playful-buds": {
+        "title": "Buds",
+        "alt": "Earbuds design",
+        "labels": ["%i", "design %i", "bud", "buds"],
+        "texts": {
+          "sxsw": "SXSW copy",
+          "cheesy": "Cheesy copy",
+          "chill": "Chill copy",
+          "cool": "Cool copy",
+          "blank": "Blank card"
+        },
+        "preview": "playful-buds-blank",
+        "names": [
+          "playful-buds-sxsw",
+          "playful-buds-cheesy",
+          "playful-buds-chill",
+          "playful-buds-cool",
+          "playful-buds-blank"
+        ],
+        "font": "JustMeAgainDownHere.ttf",
+        "color": "#000000",
+        "template": "basic"
+      },
+      "custom-birthday": {
+        "title": "Birthday",
+        "alt": "Birthday Card",
+        "labels": ["%i", "design %i", "birthday"],
+        "texts": ["text 1"],
+        "names": ["custom-birthday"],
+        "font": "JustMeAgainDownHere.ttf",
+        "color": "#000000",
+        "template": "custom"
+      },
+      "custom-getwell": {
+        "title": "Get Well",
+        "alt": "Get Well Card",
+        "labels": ["%i", "design %i", "get well"],
+        "texts": ["text 1"],
+        "names": ["custom-getwell"],
+        "font": "JustMeAgainDownHere.ttf",
+        "color": "#000000",
+        "template": "custom"
+      },
+      "custom-anniversary": {
+        "title": "Anniversary",
+        "alt": "Anniversary Card",
+        "labels": ["%i", "design %i", "anniversary"],
+        "texts": ["text 1"],
+        "names": ["custom-anniversary"],
+        "font": "JustMeAgainDownHere.ttf",
+        "color": "#000000",
+        "template": "custom"
+      },
+      "custom-congrats": {
+        "title": "Congrats",
+        "alt": "Congratulations Card",
+        "labels": ["%i", "design %i", "congrats", "congratulations"],
+        "texts": ["text 1"],
+        "names": ["custom-congrats"],
+        "color": "#000000",
+        "font": "JustMeAgainDownHere.ttf",
+        "template": "custom"
+      }
+    }
+  }
+}
