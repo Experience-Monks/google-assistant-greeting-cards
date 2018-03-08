@@ -1,0 +1,83 @@
+{
+  "name": "prj-bot-greeting-cards",
+  "version": "0.0.2",
+  "description": "Google Assistant Experiments, for action Greeting Cards",
+  "engines": {
+    "node": ">=6.11.5"
+  },
+  "contributors": [
+    "Santiago D'Antuoni <santiago.dantuoni@jam3.com>",
+    "Guillermo Figueroa <guillermo.figueroa@jam3.com>",
+    "Craig Hill <craig.hillwood@jam3.com>"
+  ],
+  "main": "index.js",
+  "dependencies": {
+    "actions-on-google": "^1.0.0",
+    "debug": "^2.2.0",
+    "dotenv": "4.0.0",
+    "express": "4.16.0",
+    "sanitize-html": "^1.17.0",
+    "sprintf-js": "^1.1.1",
+    "express-sanitizer": "^1.0.3",
+    "firebase-admin": "^5.7.0",
+    "firebase-functions": "^0.8.1",
+    "gm": "^1.23.1",
+    "json-bigint": "0.2.3",
+    "request": "2.83.0"
+  },
+  "devDependencies": {
+    "chai": "4.1.2",
+    "chai-as-promised": "7.1.1",
+    "eslint": "4.7.2",
+    "eslint-plugin-node": "5.2.0",
+    "eslint-plugin-security": "^1.4.0",
+    "mocha": "3.5.3",
+    "ngrok": "2.2.22",
+    "nodemon": "1.12.1",
+    "nsp": "2.8.1",
+    "nyc": "11.2.1",
+    "pre-push": "^0.1.1",
+    "snyk": "1.41.1"
+  },
+  "pre-push": [
+    "prepush-msg",
+    "test",
+    "js-lint"
+  ],
+  "scripts": {
+    "share:local": "nodemon ./src/entrypoints/frontend",
+    "external": "ngrok http 8010",
+    "test": "PRJ_MOCHA=true NODE_ENV=test nyc mocha",
+    "js-lint": "eslint './**/*.js' -c ./.eslintrc --quiet --ignore-pattern .gitignore",
+    "prepush-msg": "echo 'Pre-push checks...' && exit 0",
+    "local": "firebase serve --only functions",
+    "shell": "firebase experimental:functions:shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "fnc_deploy:dialog": " functions deploy fulfillmentEntryPoint --trigger-http",
+    "fnc_reset:dialog": "functions reset fulfillmentEntryPoint --keep",
+    "fnc_debug:dialog": "functions inspect fulfillmentEntryPoint",
+    "fnc_restart:dialog": "npm run fnc_deploy:dialog && npm run fnc_debug:dialog",
+    "fnc_deploy:share": " functions deploy shareCard --trigger-http",
+    "fnc_reset:share": "FNC_LOCAL=true functions reset shareCard --keep",
+    "fnc_debug:share": "FNC_LOCAL=true functions inspect shareCard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jam3/prj-bot-greeting-cards.git"
+  },
+  "keywords": [
+    "bot",
+    "chatbot",
+    "google home",
+    "google assistant",
+    "google assistant experminet"
+  ],
+  "author": "Guillermo Figueroa Mesa <guillermo.figueroa@jam3.com> (http://www.gfirem.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jam3/prj-bot-greeting-cards.git/issues"
+  },
+  "homepage": "https://github.com/Jam3/prj-bot-greeting-cards.git#readme",
+  "private": true
+}

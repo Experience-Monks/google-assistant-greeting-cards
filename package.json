@@ -1,0 +1,49 @@
+{
+  "name": "prj-bot-greeting-cards",
+  "version": "0.0.2",
+  "description": "Google Assistant Experiments, for action Greeting Cards",
+  "engines": {
+    "node": ">=6.11.5"
+  },
+  "contributors": [
+    "Santiago D'Antuoni <santiago.dantuoni@jam3.com>",
+    "Guillermo Figueroa <guillermo.figueroa@jam3.com>",
+    "Craig Hill <craig.hillwood@jam3.com>"
+  ],
+  "scripts": {
+    "external": "cd functions && npm run external",
+    "test": "cd functions && PRJ_MOCHA=true NODE_ENV=test nyc mocha",
+    "js-lint": "cd functions && npm run js-lint",
+    "local": "firebase serve",
+    "local:functions": "firebase serve --only functions",
+    "local:hosting": "firebase serve --only hosting",
+    "shell": "firebase experimental:functions:shell",
+    "deploy": "firebase deploy",
+    "deploy:functions": "firebase deploy --only functions",
+    "deploy:hosting": "firebase deploy --only hosting",
+    "logs": "firebase functions:log",
+    "fnc_deploy:dialog": "npm run fnc_deploy:dialog --prefix functions",
+    "fnc_reset:dialog": "npm run fnc_reset:dialog --prefix functions",
+    "fnc_debug:dialog": "npm run fnc_debug:dialog --prefix functions",
+    "fnc_restart:dialog": "npm run fnc_restart:dialog --prefix functions"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jam3/prj-bot-greeting-cards.git"
+  },
+  "keywords": [
+    "bot",
+    "chatbot",
+    "google home",
+    "google assistant",
+    "google assistant experiment"
+  ],
+  "author":
+    "Guillermo Figueroa Mesa <guillermo.figueroa@jam3.com> (http://www.gfirem.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jam3/prj-bot-greeting-cards.git/issues"
+  },
+  "homepage": "https://github.com/Jam3/prj-bot-greeting-cards.git#readme",
+  "private": true
+}
