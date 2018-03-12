@@ -1,59 +1,76 @@
 # Greeting Cards for Google Assistant
 
-Gratitude Garden an experiment for Google Experiments Assistant.
+Greeting Cards Actions is a [Voice Experiment](https://experiments.withgoogle.com/voice) that lets you create customized shareable greeting cards from Google Assistant.
 
-# Get Started
+![Greeting Cards](https://storage.googleapis.com/prj-gratitude-garden-prod.appspot.com/images/1920x1080.jpg)
 
-## Installation
+Try it on a Google Assistant or Google Home by saying “Hey Google, talk to Greeting Cards”.
 
-* Clone the repo `git clone https://github.com/Jam3/prj-bot-greeting-cards.git`
-* `cd prj-bot-greeting-cards/`
-* Install Firebase tools `npm install -g firebase-tools`
-* run `npm i`
-* Login to FireBase `firebase login`
-* Emulate functions local `npm install -g @google-cloud/functions-emulator`
-* Select the project on firebase `firebase use dev`
+This is an experiment, not an official Google product. We will do our best to support and maintain this experiment but your mileage may vary.
 
-## Important commands
+## Technology
 
-* Run local `npm run local`
-* Run ngrock `npm run external`
-* Run the test `npm run test`
-* Start functions emulator `functions start`
-* Stop functions emulator `functions stop`
-* Reset functions emulator `functions restart`
-* List functions in emulator `functions list`
-* Reset specific function `functions reset <function_name>`
-* `functions deploy shareCard --local-path functions --trigger-http`
+Greeting Cards is built on [Actions on Google](https://developers.google.com/actions/), the platform that allows you to make things for the Google Assistant and the Google Home. It uses [Dialogflow](https://dialogflow.com/) to handle understanding what the user says, [Firebase Cloud Functions](https://firebase.google.com/docs/functions/) for backend code, [Firebase Cloud Firestore](https://firebase.google.com/docs/firestore/) to save data, [Cloud Storage for Firebase](https://firebase.google.com/products/storage/) to store the templates and generated cards, and [Firebase Hosting](https://firebase.google.com/docs/hosting/) to host the shareable page. The project is written in JavaScript, using Actions on Google’s [Node.js client library](https://developers.google.com/actions/nodejs-client-library-release-notes).
 
-## Environments & Deployment
+This repo contains a pre-built Dialogflow Agent you can import into your own project. It contains all the Intents and Entities for Greeting Cards. This is all in the `dialogflow_agent` folder.
 
-We use 3 environment, Development, Staging and Production. They are available in **DialogFlow** and **Google Projects**
+Everything in the `functions` folder is used in Firebase Cloud Functions, which hosts the webhook code for Dialogflow as well as the share page entrypoint. The webhook handles all the response logic for Greeting Cards.
 
-## Accounts
+The `public` folder contains all the assets that will be hosted by Firebase Hosting once the project is deployed.
 
-* [Actions on Google](https://console.actions.google.com)
-* [DialogFlow](https://console.dialogflow.com)
-* [Firebase](https://console.firebase.google.com)
-* [CodeShip](https://app.codeship.com/projects/263208)
-* [Function Emulator](https://github.com/GoogleCloudPlatform/cloud-functions-emulator)
+The `storage` folder contains all the template files (and font) that are used to render the final cards. The contents of the folder needs to be uploaded to [Cloud Storage for Firebase](https://firebase.google.com/products/storage/) for your project.
 
-## Contributing
+### Importing the Dialogflow Agent
 
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Go to the [Actions on Google developer console](https://console.actions.google.com), and create a new project.
 
-## Versioning
+Click “BUILD” on the Dialogflow card, and follow the flow to create a new Dialogflow agent.
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/Jam3/prj-bot-gratitude-garden.git).
+When your agent is created, click on the gear icon to get to the “Export and Import” tab. You can then compress the `dialogflow_agent` folder from this repo into a zip file, and then import it. You should then see all of 21 Days of Gratitude’s Intents and Entities in your project.
 
-## Authors
+[Here](https://dialogflow.com/docs/getting-started/basics)’s some more info about how Dialogflow works in general.
 
-* **Craig Hill** - _Developer_ - @craig - craig.hillwood@jam3.com
-* **Santiago D'Antuoni** - _Developer_ - @Santiago - santiago.dantuoni@jam3.com
-* **Guillermo Figueroa** - _Developer_ - @gfirem - guillermo.figueroa@jam3.com
-* **Mike Nowak** - _Developer_ - @n0wak - mike.nowak@jam3.com
-  See also the list of [contributors](https://github.com/Jam3/prj-bot-gratitude-garden.git/contributors) who participated in this project.
+### Setting up
+
+Install the Firebase CLI
+
+`npm i -g firebase-tools`
+
+On the root project folder, install dependencies
+
+`npm i`
+
+Login to Firebase
+
+`firebase login`
+
+Check list of Firebase projects
+
+`firebase list`
+
+Set Firebase project as default
+
+`firebase use [FIREBASE_PROJECT_ID]`
+
+Customize the "variables" from the npm script `deploy` inside root `package.json`
+
+* `[GCLOUD_PROJECT]` with your `FIREBASE_PROJECT_ID`
+* `[SECURITY_HEADER]` with any string you wish to secure your webhook connection.
+
+Deploy to Firebase
+
+`npm run deploy`
+
+### Get your webhook URL and put it in Dialogflow
+
+Once you’ve successfully deployed the project to Firebase, your terminal should give you a url called `Function URL (fulfillmentEntryPoint):`. In Dialogflow, click the “Fulfillment” tab and toggle the “Enable” switch for the webhook. Paste that url into the text field, and add to headers the key `x-security-content` and the value you used to replace `[SECURITY_HEADER]`.
+
+**You can read more documentation about using Firebase Cloud Functions for Dialogflow fulfillment [here](https://dialogflow.com/docs/how-tos/getting-started-fulfillment).**
+
+## Contributors
+
+[Mike Nowak](https://github.com/n0wak),[Santiago D'Antuoni](https://github.com/sdantuoni), [Guillermo Figueroa](https://github.com/gfirem) and [Craig Hill](https://github.com/craighillwood).
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details.
