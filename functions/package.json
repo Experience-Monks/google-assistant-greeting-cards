@@ -1,6 +1,6 @@
 {
   "name": "prj-bot-greeting-cards",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Google Assistant Experiments, for action Greeting Cards",
   "engines": {
     "node": ">=6.11.5"
@@ -8,7 +8,8 @@
   "contributors": [
     "Santiago D'Antuoni <santiago.dantuoni@jam3.com>",
     "Guillermo Figueroa <guillermo.figueroa@jam3.com>",
-    "Craig Hill <craig.hillwood@jam3.com>"
+    "Craig Hill <craig.hillwood@jam3.com>",
+    "Mike Nowak <mike.nowak@jam3.com>"
   ],
   "main": "index.js",
   "dependencies": {
@@ -39,25 +40,24 @@
     "pre-push": "^0.1.1",
     "snyk": "1.41.1"
   },
-  "pre-push": [
-    "prepush-msg",
-    "test",
-    "js-lint"
-  ],
+  "pre-push": ["prepush-msg", "test", "js-lint"],
   "scripts": {
     "share:local": "nodemon ./src/entrypoints/frontend",
     "external": "ngrok http 8010",
     "test": "PRJ_MOCHA=true NODE_ENV=test nyc mocha",
-    "js-lint": "eslint './**/*.js' -c ./.eslintrc --quiet --ignore-pattern .gitignore",
+    "js-lint":
+      "eslint './**/*.js' -c ./.eslintrc --quiet --ignore-pattern .gitignore",
     "prepush-msg": "echo 'Pre-push checks...' && exit 0",
     "local": "firebase serve --only functions",
     "shell": "firebase experimental:functions:shell",
     "deploy": "firebase deploy --only functions",
     "logs": "firebase functions:log",
-    "fnc_deploy:dialog": " functions deploy fulfillmentEntryPoint --trigger-http",
+    "fnc_deploy:dialog":
+      " functions deploy fulfillmentEntryPoint --trigger-http",
     "fnc_reset:dialog": "functions reset fulfillmentEntryPoint --keep",
     "fnc_debug:dialog": "functions inspect fulfillmentEntryPoint",
-    "fnc_restart:dialog": "npm run fnc_deploy:dialog && npm run fnc_debug:dialog",
+    "fnc_restart:dialog":
+      "npm run fnc_deploy:dialog && npm run fnc_debug:dialog",
     "fnc_deploy:share": " functions deploy shareCard --trigger-http",
     "fnc_reset:share": "FNC_LOCAL=true functions reset shareCard --keep",
     "fnc_debug:share": "FNC_LOCAL=true functions inspect shareCard"
@@ -73,7 +73,8 @@
     "google assistant",
     "google assistant experminet"
   ],
-  "author": "Guillermo Figueroa Mesa <guillermo.figueroa@jam3.com> (http://www.gfirem.com)",
+  "author":
+    "Guillermo Figueroa Mesa <guillermo.figueroa@jam3.com> (http://www.gfirem.com)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Jam3/prj-bot-greeting-cards.git/issues"

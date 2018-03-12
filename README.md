@@ -2,7 +2,7 @@
 
 Greeting Cards Actions is a [Voice Experiment](https://experiments.withgoogle.com/voice) that lets you create customized shareable greeting cards from Google Assistant.
 
-![Greeting Cards](https://storage.googleapis.com/prj-gratitude-garden-prod.appspot.com/images/1920x1080.jpg)
+![Greeting Cards](https://storage.googleapis.com/prj-greeting-cards-prod.appspot.com/previews/hero.png)
 
 Try it on a Google Assistant or Google Home by saying “Hey Google, talk to Greeting Cards”.
 
