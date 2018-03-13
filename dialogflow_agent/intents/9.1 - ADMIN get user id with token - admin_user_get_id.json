@@ -1,0 +1,38 @@
+{
+  "id": "98847a99-0e52-460c-9d27-663b6afaefbd",
+  "name": "9.1 - ADMIN get user id with token - admin_user_get_id",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.admin_user_get_id",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "c482a074-b23a-4bd1-b151-718e9e117090",
+          "required": false,
+          "dataType": "@sys.any",
+          "name": "token",
+          "value": "$token",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1520454647,
+  "fallbackIntent": false,
+  "events": []
+}

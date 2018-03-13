@@ -1,0 +1,50 @@
+{
+  "id": "c5a51d9e-5eb7-4307-ac25-80959ec9a8d9",
+  "name": "06.3 - Switch Modifier - Chill",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "card.switch",
+      "affectedContexts": [
+        {
+          "name": "switch_text",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "acb60c28-d8a9-4c7a-b6f0-d21fcbcf50d9",
+          "required": false,
+          "name": "card_variant",
+          "value": "chill",
+          "isList": false
+        },
+        {
+          "id": "201b024c-aff7-407d-8369-daa413b42d9a",
+          "required": false,
+          "name": "card_change",
+          "value": "0",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1520604887,
+  "fallbackIntent": false,
+  "events": []
+}

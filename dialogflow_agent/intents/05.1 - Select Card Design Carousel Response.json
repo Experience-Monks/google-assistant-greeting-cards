@@ -1,0 +1,46 @@
+{
+  "id": "c55a7453-a093-4db9-bbc5-5fc6f9e8a007",
+  "name": "05.1 - Select Card Design Carousel Response",
+  "auto": true,
+  "contexts": [
+    "select_tone"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "card.selected_design",
+      "affectedContexts": [
+        {
+          "name": "select_design",
+          "parameters": {},
+          "lifespan": 3
+        },
+        {
+          "name": "switch_text",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1520883822,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "actions_intent_OPTION"
+    }
+  ]
+}

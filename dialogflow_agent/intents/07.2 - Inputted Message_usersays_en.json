@@ -1,0 +1,16 @@
+[
+  {
+    "id": "20edf830-96b4-43a5-a0ca-3cace98faf7b",
+    "data": [
+      {
+        "text": "message",
+        "alias": "card_message",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1519832206
+  }
+]

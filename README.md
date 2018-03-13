@@ -26,7 +26,7 @@ Go to the [Actions on Google developer console](https://console.actions.google.c
 
 Click “BUILD” on the Dialogflow card, and follow the flow to create a new Dialogflow agent.
 
-When your agent is created, click on the gear icon to get to the “Export and Import” tab. You can then compress the `dialogflow_agent` folder from this repo into a zip file, and then import it. You should then see all of 21 Days of Gratitude’s Intents and Entities in your project.
+When your agent is created, click on the gear icon to get to the “Export and Import” tab. You can then compress the `dialogflow_agent` folder from this repo into a zip file, and then import it. You should then see all of Greeting Card’s Intents and Entities in your project.
 
 [Here](https://dialogflow.com/docs/getting-started/basics)’s some more info about how Dialogflow works in general.
 

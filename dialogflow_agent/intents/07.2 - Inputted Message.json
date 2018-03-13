@@ -1,0 +1,44 @@
+{
+  "id": "6dc908ea-a2dc-4805-ba39-f584deb96b1b",
+  "name": "07.2 - Inputted Message",
+  "auto": true,
+  "contexts": [
+    "input_message"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "card.input_message",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "af1334a6-ffae-400d-ac0e-c44184569aa9",
+          "required": false,
+          "dataType": "@sys.any",
+          "name": "card_message",
+          "value": "$card_message",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1520883924,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "actions_intent_CONFIRMATION"
+    }
+  ]
+}

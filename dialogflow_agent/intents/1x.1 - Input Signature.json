@@ -1,0 +1,46 @@
+{
+  "id": "7aca32da-8a1d-4e4a-a4a9-a761544e6f4c",
+  "name": "1x.1 - Input Signature",
+  "auto": true,
+  "contexts": [
+    "prompt_signature"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.signed",
+      "affectedContexts": [
+        {
+          "name": "default_fallback",
+          "parameters": {},
+          "lifespan": 1
+        }
+      ],
+      "parameters": [
+        {
+          "id": "94021259-8465-4027-9fe0-b10e90386b23",
+          "required": false,
+          "dataType": "@sys.any",
+          "name": "signature",
+          "value": "$signature",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1519944311,
+  "fallbackIntent": false,
+  "events": []
+}

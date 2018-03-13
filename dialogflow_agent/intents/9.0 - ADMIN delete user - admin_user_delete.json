@@ -1,0 +1,29 @@
+{
+  "id": "214d962c-a620-41e2-b7a3-a65725c2e5e7",
+  "name": "9.0 - ADMIN delete user - admin_user_delete",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.admin_user_delete",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1520451785,
+  "fallbackIntent": false,
+  "events": []
+}

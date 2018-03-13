@@ -1,0 +1,52 @@
+{
+  "id": "6900e198-d440-4c8a-830a-09eaebde9447",
+  "name": "06.3 - Switch Modifier - Blank",
+  "auto": true,
+  "contexts": [
+    "switch_text"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "card.switch",
+      "affectedContexts": [
+        {
+          "name": "switch_text",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "12ac4fd5-af47-4640-a85a-62cd87bdfb73",
+          "required": false,
+          "name": "card_change",
+          "value": "0",
+          "isList": false
+        },
+        {
+          "id": "14df2616-b796-4096-8ddc-f1cb75424754",
+          "required": false,
+          "name": "card_variant",
+          "value": "blank",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1520372377,
+  "fallbackIntent": false,
+  "events": []
+}

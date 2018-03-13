@@ -1,0 +1,16 @@
+[
+  {
+    "id": "45c8119f-cd8f-428e-9b31-9f3b6bc21d30",
+    "data": [
+      {
+        "text": "anything",
+        "alias": "signature",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1519944311
+  }
+]

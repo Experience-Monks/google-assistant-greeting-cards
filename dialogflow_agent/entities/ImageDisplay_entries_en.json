@@ -1,0 +1,28 @@
+[
+  {
+    "value": "CROPPED",
+    "synonyms": [
+      "CROPPED",
+      "crop"
+    ]
+  },
+  {
+    "value": "WHITE",
+    "synonyms": [
+      "WHITE"
+    ]
+  },
+  {
+    "value": "DEFAULT",
+    "synonyms": [
+      "DEFAULT",
+      "default"
+    ]
+  },
+  {
+    "value": "format",
+    "synonyms": [
+      "format"
+    ]
+  }
+]

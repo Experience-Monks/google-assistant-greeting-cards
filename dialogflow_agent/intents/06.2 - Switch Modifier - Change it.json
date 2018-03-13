@@ -1,0 +1,45 @@
+{
+  "id": "3d5fa7df-fe31-4939-b155-174d87d03d13",
+  "name": "06.2 - Switch Modifier - Change it",
+  "auto": true,
+  "contexts": [
+    "switch_text"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "card.switch",
+      "affectedContexts": [
+        {
+          "name": "switch_text",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "9297b3ff-5120-42ec-843c-d8d5561a725c",
+          "required": false,
+          "name": "card_change",
+          "value": "1",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1520604179,
+  "fallbackIntent": false,
+  "events": []
+}

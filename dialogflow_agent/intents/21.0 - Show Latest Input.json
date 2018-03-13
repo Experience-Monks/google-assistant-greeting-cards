@@ -1,0 +1,44 @@
+{
+  "id": "ab777058-ed3d-4853-bd4f-d8c57f464aa0",
+  "name": "21.0 - Show Latest Input",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.show_latest",
+      "affectedContexts": [
+        {
+          "name": "list_cards",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "607f4469-2270-43d4-aec4-9c9b57ef18a4",
+          "required": false,
+          "dataType": "@sys.number-integer",
+          "name": "show_count",
+          "value": "$show_count",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1520270311,
+  "fallbackIntent": false,
+  "events": []
+}

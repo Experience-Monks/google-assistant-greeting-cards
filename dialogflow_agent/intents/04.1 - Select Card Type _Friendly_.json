@@ -1,0 +1,45 @@
+{
+  "id": "517338fc-a814-44c9-b4c5-2f4844cf2f1f",
+  "name": "04.1 - Select Card Type \"Friendly\"",
+  "auto": true,
+  "contexts": [
+    "select_tone"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "card.selected_tone",
+      "affectedContexts": [
+        {
+          "name": "select_tone",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "8469d563-3751-41fc-8fc3-471f05d019ed",
+          "required": false,
+          "name": "card_tone",
+          "value": "friendly",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1520603847,
+  "fallbackIntent": false,
+  "events": []
+}

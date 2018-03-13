@@ -1,0 +1,52 @@
+{
+  "id": "97d8fb0b-3fb5-440b-bb50-166f6d9ea3bb",
+  "name": "06.3 - Switch Modifier - Cheesy",
+  "auto": true,
+  "contexts": [
+    "switch_text"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "card.switch",
+      "affectedContexts": [
+        {
+          "name": "switch_text",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "9ddf286f-b08f-4bf2-860a-ed7ca3e5aae0",
+          "required": false,
+          "name": "card_variant",
+          "value": "cheesy",
+          "isList": false
+        },
+        {
+          "id": "fd58cf2c-9214-4d9d-90dd-45f1758a7878",
+          "required": false,
+          "name": "card_change",
+          "value": "0",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1520604551,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,41 @@
+{
+  "id": "438347ce-75bd-4f9d-954b-155ff8d09345",
+  "name": "07.1 - Message Confirmation",
+  "auto": true,
+  "contexts": [
+    "prompt_message"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "confirm.message",
+      "affectedContexts": [
+        {
+          "name": "input_message",
+          "parameters": {},
+          "lifespan": 1
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1520431761,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "actions_intent_CONFIRMATION"
+    }
+  ]
+}

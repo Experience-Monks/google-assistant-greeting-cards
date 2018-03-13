@@ -1,0 +1,33 @@
+{
+  "id": "b7d4e00f-a754-4ac7-95fa-f4e24922be3b",
+  "name": "04.4 - Send to New Surface",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.new_surface",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1520431880,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "actions_intent_NEW_SURFACE"
+    }
+  ]
+}
