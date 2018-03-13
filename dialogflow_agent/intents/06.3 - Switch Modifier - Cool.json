@@ -1,0 +1,52 @@
+{
+  "id": "6fdce954-61cf-40d2-9679-c4902229a3ff",
+  "name": "06.3 - Switch Modifier - Cool",
+  "auto": true,
+  "contexts": [
+    "switch_text"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "card.switch",
+      "affectedContexts": [
+        {
+          "name": "switch_text",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "45c6a815-86c4-4413-bf87-d458ef0da654",
+          "required": false,
+          "name": "card_variant",
+          "value": "cool",
+          "isList": false
+        },
+        {
+          "id": "3cbb8089-05f4-4b1f-b274-4e17961b1c26",
+          "required": false,
+          "name": "card_change",
+          "value": "0",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1520604867,
+  "fallbackIntent": false,
+  "events": []
+}

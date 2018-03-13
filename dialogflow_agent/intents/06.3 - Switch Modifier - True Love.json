@@ -1,0 +1,52 @@
+{
+  "id": "a774b3e6-73a4-44d0-9b3b-a3da3b46a64b",
+  "name": "06.3 - Switch Modifier - True Love",
+  "auto": true,
+  "contexts": [
+    "switch_text"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "card.switch",
+      "affectedContexts": [
+        {
+          "name": "switch_text",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "688c3fbd-fa1a-46e9-8c84-7435fd3643af",
+          "required": false,
+          "name": "card_variant",
+          "value": "true",
+          "isList": false
+        },
+        {
+          "id": "1bea1e5d-6eb9-47cb-bcf2-6399abcb8c98",
+          "required": false,
+          "name": "card_change",
+          "value": "0",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1520372837,
+  "fallbackIntent": false,
+  "events": []
+}

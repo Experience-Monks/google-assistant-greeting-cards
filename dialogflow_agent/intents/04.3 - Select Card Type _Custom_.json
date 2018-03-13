@@ -1,0 +1,46 @@
+{
+  "id": "c4a31976-f399-4f1e-8c53-04a481fd19bb",
+  "name": "04.3 - Select Card Type \"Custom\"",
+  "auto": true,
+  "contexts": [
+    "select_tone"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "card.selected_tone",
+      "affectedContexts": [
+        {
+          "name": "select_tone",
+          "parameters": {},
+          "lifespan": 1
+        }
+      ],
+      "parameters": [
+        {
+          "id": "a45738c3-e471-4983-af19-4c8dcb91ad9c",
+          "required": false,
+          "dataType": "",
+          "name": "card_tone",
+          "value": "custom",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1520604156,
+  "fallbackIntent": false,
+  "events": []
+}

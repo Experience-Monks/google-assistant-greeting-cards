@@ -1,0 +1,52 @@
+{
+  "id": "256d55f1-2bf4-4973-abbd-890d4faf9fea",
+  "name": "06.3 - Switch Modifier - Crazy Love",
+  "auto": true,
+  "contexts": [
+    "switch_text"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "card.switch",
+      "affectedContexts": [
+        {
+          "name": "switch_text",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "c89e1cf0-6bf2-460b-9e1b-4809f9b5ca60",
+          "required": false,
+          "name": "card_variant",
+          "value": "crazy",
+          "isList": false
+        },
+        {
+          "id": "3698522e-a935-43b9-8e35-db721aaca102",
+          "required": false,
+          "name": "card_change",
+          "value": "0",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1520456378,
+  "fallbackIntent": false,
+  "events": []
+}

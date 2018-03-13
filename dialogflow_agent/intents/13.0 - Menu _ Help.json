@@ -1,0 +1,29 @@
+{
+  "id": "41599bef-20f3-42f0-874b-eaef46dc161c",
+  "name": "13.0 - Menu / Help",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.menu",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1520607044,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,42 @@
+{
+  "id": "a78d8161-b2c8-485d-9548-9d669af8e770",
+  "name": "06.3 - Switch Next / Confirm",
+  "auto": true,
+  "contexts": [
+    "switch_text"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "card.switch_confirm",
+      "affectedContexts": [
+        {
+          "name": "prompt_message",
+          "parameters": {},
+          "lifespan": 5
+        },
+        {
+          "name": "switch_text",
+          "parameters": {},
+          "lifespan": 0
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1520604902,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,60 @@
+{
+  "id": "63e43f7d-5713-4757-acfa-acb0ea937882",
+  "name": "06.3 - Switch Modifier - SXSW",
+  "auto": true,
+  "contexts": [
+    "switch_text"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "card.switch",
+      "affectedContexts": [
+        {
+          "name": "switch_text",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "a8454b49-0046-42e9-863d-d5b4e7fc697d",
+          "required": false,
+          "dataType": "@sys.location",
+          "name": "location",
+          "value": "$location",
+          "isList": false
+        },
+        {
+          "id": "3cfd01c4-6996-4565-b480-3046db39d144",
+          "required": false,
+          "name": "card_variant",
+          "value": "sxsw",
+          "isList": false
+        },
+        {
+          "id": "0b568118-ccaf-4ee9-9c53-3d006e859e34",
+          "required": false,
+          "name": "card_change",
+          "value": "0",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1520372861,
+  "fallbackIntent": false,
+  "events": []
+}

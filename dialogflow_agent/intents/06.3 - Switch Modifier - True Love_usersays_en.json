@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ae18bcd2-3e4d-444f-867f-eb7adf27f209",
+    "data": [
+      {
+        "text": "make it truer",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1519921453
+  },
+  {
+    "id": "33fde5a3-e372-45ab-a75d-08efef7d340b",
+    "data": [
+      {
+        "text": "truer",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1519921453
+  },
+  {
+    "id": "63e35bc8-6641-4027-bdcb-dadef0115603",
+    "data": [
+      {
+        "text": "true love",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1519921453
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "id": "354a6be3-0286-4b0d-b6b5-16e25199ee88",
+  "name": "04.2 - Select Card Type \"Romantic\"",
+  "auto": true,
+  "contexts": [
+    "select_tone"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "card.selected_tone",
+      "affectedContexts": [
+        {
+          "name": "select_tone",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "aac39499-9f45-4a21-a494-e249ad3b4acd",
+          "required": false,
+          "name": "card_tone",
+          "value": "romantic",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1520603906,
+  "fallbackIntent": false,
+  "events": []
+}

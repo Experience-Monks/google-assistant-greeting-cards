@@ -1,0 +1,35 @@
+{
+  "id": "e6146558-792d-4f98-ae71-ac6ce44f5f7c",
+  "name": "1x.0 - Prompt Signature",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.sign",
+      "affectedContexts": [
+        {
+          "name": "prompt_signature",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1520005587,
+  "fallbackIntent": false,
+  "events": []
+}

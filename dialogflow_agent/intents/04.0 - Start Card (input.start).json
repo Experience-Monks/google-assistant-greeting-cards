@@ -1,0 +1,55 @@
+{
+  "id": "20b25e7a-abc9-4775-b706-b79cbc7648ef",
+  "name": "04.0 - Start Card (input.start)",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.start",
+      "affectedContexts": [
+        {
+          "name": "select_tone",
+          "parameters": {},
+          "lifespan": 3
+        },
+        {
+          "name": "select_design",
+          "parameters": {},
+          "lifespan": 0
+        },
+        {
+          "name": "select_text",
+          "parameters": {},
+          "lifespan": 0
+        },
+        {
+          "name": "switch_text",
+          "parameters": {},
+          "lifespan": 0
+        },
+        {
+          "name": "list_cards",
+          "parameters": {},
+          "lifespan": 0
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1520607171,
+  "fallbackIntent": false,
+  "events": []
+}

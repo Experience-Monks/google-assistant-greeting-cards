@@ -1,0 +1,46 @@
+{
+  "id": "a26c53e6-ac98-444b-a846-a8284ff33b2d",
+  "name": "06.1 - Card Selected Text (card.selected_text)",
+  "auto": true,
+  "contexts": [
+    "select_design"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "card.selected_text",
+      "affectedContexts": [
+        {
+          "name": "confirm_message",
+          "parameters": {},
+          "lifespan": 5
+        },
+        {
+          "name": "switch_text",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1520456324,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "actions_intent_OPTION"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "713bf1ff-9fe3-439f-a3c8-2c9807d7b6b2",
+  "name": "06.3 - Switch Modifier - Young Love",
+  "auto": true,
+  "contexts": [
+    "switch_text"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "card.switch",
+      "affectedContexts": [
+        {
+          "name": "switch_text",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "5a3df314-116c-4620-852d-046ded65f815",
+          "required": false,
+          "name": "card_variant",
+          "value": "young",
+          "isList": false
+        },
+        {
+          "id": "b4230e63-8e77-4417-85aa-e562d7df3e22",
+          "required": false,
+          "name": "card_change",
+          "value": "0",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1520372847,
+  "fallbackIntent": false,
+  "events": []
+}

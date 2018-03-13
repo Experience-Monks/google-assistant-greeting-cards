@@ -1,0 +1,59 @@
+[
+  {
+    "id": "cffb1fbe-85b7-4d5d-956f-307cf9f8ee66",
+    "data": [
+      {
+        "text": "austin texas",
+        "alias": "location",
+        "meta": "@sys.location",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520371113
+  },
+  {
+    "id": "1a648462-6f54-4e30-b9ac-dca56873cdf7",
+    "data": [
+      {
+        "text": "south by south ",
+        "userDefined": false
+      },
+      {
+        "text": "west",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520371113
+  },
+  {
+    "id": "61f80e98-f6a6-4ff7-8d3a-fad8b30f0f50",
+    "data": [
+      {
+        "text": "austin",
+        "alias": "location",
+        "meta": "@sys.location",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520371113
+  },
+  {
+    "id": "c19dea34-41fd-4d98-bfca-6d049ebd26cc",
+    "data": [
+      {
+        "text": "sxsw",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1520371113
+  }
+]
